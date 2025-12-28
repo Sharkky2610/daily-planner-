@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.block {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.row input[type="text"] {
+  flex: 1;
+  padding: 5px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.done-text {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.modal-content textarea,
+.modal-content input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+

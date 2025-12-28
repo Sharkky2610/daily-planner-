@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daily Habit Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Daily Planner</h1>
+
+<div id="schedule"></div>
+
+<button id="save">Save Day</button>
+
+<!-- Modal -->
+<div id="trackerModal" class="modal hidden">
+  <div class="modal-content">
+    <h3 id="modalTitle">Daily Reflection</h3>
+    
+<p id="scoreWarning" style="color:red; display:none;">
+  Score must be between 1 and 10
+</p>
+
+    <textarea
+      id="reflectionText"
+      placeholder=""
+      rows="5">
+    </textarea>
+
+    <input
+      type="number"
+      id="reflectionScore"
+      min="0"
+      max="10"
+      placeholder="Score (0–10)" />
+
+    <div class="modal-actions">
+      <button id="trackSave">Save</button>
+      <button id="trackCancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
